@@ -166,5 +166,5 @@ call ale#linter#Define('python', {
 \   'executable': function('ale_linters#python#flake8#GetExecutable'),
 \   'cwd': function('ale_linters#python#flake8#GetCwd'),
 \   'command': function('ale_linters#python#flake8#RunWithVersionCheck'),
-\   'callback': 'ale_linters#python#flake8#Handle',
+\   'callback': function('ale_linters#python#flake8#Handle'),
 \})
